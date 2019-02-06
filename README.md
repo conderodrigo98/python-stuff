@@ -10,7 +10,9 @@ A script that solves a maze given in a txt file (maze.txt). For the program to w
 Input: 
 
 S000#
+
 ###0#
+
 E000#
 
 Output:
