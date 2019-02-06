@@ -1,5 +1,3 @@
-import json
-
 class maze:
 	array = []
 	def set(self,i,j,n):
@@ -20,16 +18,8 @@ with open('maze.txt') as f:
 end = [0, 0, 1]
 notEnded = 1
 
-
-f1 = open("log1.txt", "r+")
-f2 = open("log2.txt", "r+")
-
-
 #recursive function to solve maze
 def solve(i, j, count):
-	string = " "+str(i)+"   "+str(j)+"\n"
-	f1.write(string)
-	f2.write(json.dumps(myMaze.array)+"\n")
 	#already at the end?
 	if notEnded:
 			#currently at the end?
@@ -81,6 +71,3 @@ else:
 	path = 'S' + path
 
 print(path)
-
-f1.close()
-f2.close()
