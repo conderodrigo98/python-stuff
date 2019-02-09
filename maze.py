@@ -12,7 +12,6 @@ with open('maze.txt') as f:
 		if splitedLine[len(splitedLine) - 1] == '\n':
 			splitedLine.pop()
 		myMaze.array.append(splitedLine)
-	print(myMaze.array)
 
 #global variables
 end = [0, 0, 1]
