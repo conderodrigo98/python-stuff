@@ -12,7 +12,7 @@ with open("questions.txt", "r+") as f1:
 		while command != "exit\n":
 			if command == "help\n":
 				print(
-					"Type 'get' to get a randomly selected flash card.\nType 'add' to add a new flash card.\nIf you want to exit, just enter 'exit'."
+					"Type 'get' to get a randomly selected flash card.\nType 'add' to add a new flash card.\nIf you want to exit the app, just enter 'exit'."
 					)
 			elif command == "get\n":
 				n = random.randint(0, len(questions)-1);
@@ -21,14 +21,14 @@ with open("questions.txt", "r+") as f1:
 				if answer == answers[n]:
 					print("That's correct! Great job!")
 				else:
-					print("Nope, the correct answer was:", answers[n][0:len(answers[n])-1])
+					print("Nope, the correct answer was: ", answers[n][0:len(answers[n])-1])
 			elif command == "add\n":
-				print("Enter new question")
+				print("Enter new question:")
 				new_q = stdin.readline()
 				if new_q in questions:
-					print("We already have that question")
+					print("We already have that question.")
 				else:
-					print("Enter the answer")
+					print("Enter the answer:")
 					new_a = stdin.readline()
 					f1.write(new_q)
 					f2.write(new_a)
