@@ -12,3 +12,4 @@ A flash cards manager. You can add new questions and get randomly selected quest
 
 ## credit-fraud.py
 A machine learning classificator that predicts whether a certain transaction is a fraud or not. Uses sklearn's SGDClassifier.
+The dataset used was downloaded from [here](https://www.kaggle.com/mlg-ulb/creditcardfraud)
